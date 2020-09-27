@@ -9,11 +9,10 @@ div.jumbotron.carousel-hero {
 }
 
 div.jumbotron.hero-nature {
-  background-image: url('../../assets/img/nonTechnical/spider.png');
+  background-image: url('../../assets/img/spider.png');
 }
 
 div.jumbotron.hero-photography {
-  background-image: url('../../assets/img/nonTechnical/test2.jpg');
 }
 
 h1.hero-title, h2.hero-title, h3.hero-title {
