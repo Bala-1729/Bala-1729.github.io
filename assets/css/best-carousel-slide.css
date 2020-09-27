@@ -15,6 +15,7 @@ div.jumbotron.hero-nature {
 
 div.jumbotron.hero-photography {
   background-image: url('../../assets/img/sherlock.jpg');
+  background-blend-mode: multiply;
 }
 
 h1.hero-title, h2.hero-title, h3.hero-title {
