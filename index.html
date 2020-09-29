@@ -34,13 +34,14 @@
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
     <link rel="stylesheet" href="assets/css/Video-Parallax-Background-v3.css">
     <link rel="stylesheet" href="assets/css/Zig-Zag-Timeline-v3.css">
+    <link rel="stylesheet" href="assets/css/Scroll-To-Top-1.css">
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
 
 </head>
-<style>
-
-</style>
 
 <body id="page-top">
+    <div id="loading" class="loading">Yükleniyor</div>
+    <div id="tester" style="display: none;"><a class="floating" href="#" id="scroll-to-top" title="Scroll to top" data-target="#page-top"><i class="fas fa-sort-up" style="font-size: 28px;"></i></a></div>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
         <div class="container"><img src="./assets/img/logo.png" width="100px"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="font-size: 16px;">
@@ -56,22 +57,24 @@
     </nav>
     <div id="videoContainer" class="">
         <div class="container-fluid d-flex justify-content-center align-items-center align-content-center video-parallax-container" style="height: 900px;">
-            <div class="row" style="margin-top: -102px;">
+            <div class="row" style="margin-top: -119px;">
                 <div class="col-12 offset-xl-0 d-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
-                    <h1 class="text-center" style="color: rgb(218,165,32);font-size: 80px;font-family: 'Rakkas', cursive;">Zenista TechFest'20
-                    </h1>
+                    <h1 id="zen1" class="text-center" style="color: white;font-family: 'Rakkas', cursive;">Department of ECE</h1>
+                    <h1 id="zen2" class="text-center" style="color: rgb(218,165,32);font-family: 'Rakkas', cursive;">Sri Sairam Engineering College</h1>
+                    <h6 id="zen3" class="text-center" style="color:white;font-family: 'Rakkas', cursive;font-size: 24px;">Proudly Presents</h6>
+                    <h1 id="zen" class="text-center" style="color: rgb(218,165,32);font-family: 'Rakkas', cursive;">Zenista TechFest'20</h1>
                     <div class="caption v-middle text-center">
                         <h1 class="cd-headline clip" style="color: white;">
                             <span class="blc">Let's | </span>
                             <span class="cd-words-wrapper">
-                                <b class="is-visible" style="font-size: 60px;">Create.</b>
-                                <b style="font-size: 60px;">Develop.</b>
-                                <b style="font-size: 60px;">Innovate.</b>
+                                <b class="is-visible">Create.</b>
+                                <b >Develop.</b>
+                                <b s>Innovate.</b>
                             </span>
                         </h1>
                     </div>
                 </div>
-                <div class="col-xl-12" style="margin-bottom: 30px;">
+                <div class="col-xl-12" style="margin-bottom:-0px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <div data-bs-hover-animate="swing" class="mouse-scroll loading-spinner">
                         <a href='#rules'>
                             <div class="one"></div>
@@ -79,9 +82,9 @@
                             <div class="three"></div>
                         </a>
                     </div>
-                    <br /><br /><br />
+                    <br /><br />
                 </div>
-                <div class="col" style="padding-top: 0px;margin-top: 0px; text-align: center;">
+                <div class="col" style="padding-top: 0px;margin-top: 0px; text-align: center;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <a href='https://forms.gle/cFW8hkF4QBLqHPX96' target="_blank"><button type="button"
                             class="btn btn-warning"
                             style="box-shadow: 15px 6px 32px -8px rgb(182, 132, 5);background-color: rgb(218,165,32);padding-left: 30px;padding-right: 30px;color:aliceblue;">Register</button></a>
@@ -106,7 +109,7 @@
         </div>
     </header>
     <div class="col-12" style="margin-top: 20px;" id="events">
-        <h1 class="text-center" style="color: rgb(218,165,32); font-size: 70px; font-family: 'Rakkas', cursive;"> Events Timeline</h1>
+        <h1 id="headers" class="text-center" style="color: rgb(218,165,32); font-family: 'Rakkas', cursive;"> Events Timeline</h1>
         <hr class="style-one" /><br />
     </div>
     <div style="margin-top: 0px;background: rgba(0,0,0,0.6);">
@@ -157,7 +160,7 @@
                                 </div>
                                 <div class="timeline-body">
                                     <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">Problem Solving</h5>
-                                    <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">12 Noon to 1PM</h5>
+                                    <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">12.30PM to 1.30PM</h5>
                                     <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">Team-Size: 2 members per team.</h5>
                                 </div>
                             </div>
@@ -188,7 +191,7 @@
                                     <h1 style="color:rgb(218,165,32); font-family: 'Jacques Francois Shadow', cursive;">Talent 360</h1>
                                 </div>
                                 <div class="timeline-body">
-                                    <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">Music/Art/Photography Contest</h5>
+                                    <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">Art/Music/Photography Contest</h5>
                                     <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">a)Strokes b)Chords c)Lenses</h5>
                                     <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">Offline Mode</h5>
                                     <h5 class="subheading" style="color: white;font-family: 'Grenze Gotisch', cursive;">Individual Event.</h5>
@@ -209,11 +212,11 @@
             }
         </style>
         <div class="col-12">
-            <p style="color: rgb(255,255,255);text-align: center;margin-top: 30px;font-size: 30px;font-family: 'Grenze Gotisch', cursive;"><span style="color: red; display: inline;font-family: 'Grenze Gotisch', cursive;">Note:</span>Timings may be subject to change due to operational constraint.</p>
+            <p id="note" style="color: rgb(255,255,255);text-align: center;margin-top: 30px;font-family: 'Grenze Gotisch', cursive;"><span style="color: red; display: inline;font-family: 'Grenze Gotisch', cursive;">Note:</span>Timings may be subject to change due to operational constraint.</p>
         </div>
     </div>
-    <div class="col-12">
-        <h1 class="text-center" style="color: rgb(218,165,32); font-size: 70px; font-family: 'Rakkas', cursive;">
+    <div id="technicalEvents" class="col-12">
+        <h1 id="headers" class="text-center" style="color: rgb(218,165,32);  font-family: 'Rakkas', cursive;">
             Technical Events</h1>
         <hr class="style-one" /><br />
     </div>
@@ -262,8 +265,8 @@
             </div>
         </div>
     </div>
-    <div class="col-12" style="padding-top: 20px;">
-        <h1 class="text-center" style="color: rgb(218,165,32); font-size: 70px; font-family: 'Rakkas', cursive;">
+    <div id="nonTechnicalEvents" class="col-12" style="padding-top: 20px;">
+        <h1 id="headers" class="text-center" style="color: rgb(218,165,32); font-family: 'Rakkas', cursive;">
             Non-Technical Events</h1>
         <hr class="style-one" /><br />
     </div>
@@ -302,7 +305,7 @@
         </div>
     </div>
     <div id="gallery" class="col-12" style="padding-top: 20px;">
-        <h1 class="text-center" style="color: rgb(218,165,32); font-size: 70px; font-family: 'Rakkas', cursive;">
+        <h1 id="headers" class="text-center" style="color: rgb(218,165,32); font-family: 'Rakkas', cursive;">
             Zenista TechFest'19 Gallery</h1>
         <hr class="style-one" /><br />
     </div>
@@ -349,7 +352,7 @@
         </div>
     </section>
     <div id="team" class="col-12" style="padding-top: 20px;">
-        <h1 class="text-center" style="color: rgb(218,165,32); font-size: 70px; font-family: 'Rakkas', cursive;">
+        <h1 id="headers" class="text-center" style="color: rgb(218,165,32);  font-family: 'Rakkas', cursive;">
             Our Team</h1>
         <hr class="style-one" /><br />
     </div>
@@ -612,7 +615,7 @@
     </div>
     <section id="faq" class="cta" style="background: url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdyZ_pnRplBa7FV5UDoFEWUCLFHVFvZl3Daw&amp;usqp=CAU&quot;) no-repeat, rgba(0,0,0,0.3);padding-top: 61px;padding-bottom: 61px;background-size: cover, auto;">
         <div>
-            <h3 class="display-4" style="color: rgb(218,165,32);text-align: center;font-family: 'Rakkas', cursive;">Frequently Asked Questions</h3>
+            <h3 id="headers" class="display-4" style="color: rgb(218,165,32);text-align: center;font-family: 'Rakkas', cursive;">Frequently Asked Questions</h3>
         </div>
         <div class="container" style="padding-top:40px;padding-bottom:40px;">
             <div class="container">
@@ -785,6 +788,9 @@
         let d = new Date();
         document.getElementById("credits").innerHTML = `Zenista © ${d.getFullYear()}`
     </script>
+
+    <script src="https://kit.fontawesome.com/c3c5bdef0e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
@@ -1061,8 +1067,18 @@
                 </button>
             </div>
             <div class="modal-body" style="font-size:20px;font-family: 'Grenze Gotisch', cursive">
-                For both idea and model the project must fall under the following categories:<br /> 1. Life after COVID and COVID related projects<br /> 2. Responsible consumption and production<br /> 3. Sustainable cities and communities<br /> 4. Good
-                Health and well Being<br /> 5. Clean water and sanitation<br /> 6. Affordable and clean energy<br /> 7. Industry innovation and infrastructure<br /> 8. Life Below Water<br /> 9. Life on Land<br /> 10. Rural well being<br />
+                <ul>For both idea and model the project must fall under the following categories:<br />
+                    <li> Life after COVID and COVID related projects</li>
+                    <li> Responsible consumption and production</li>
+                    <li> Sustainable cities and communities</li>
+                    <li> Good Health and well Being</li>
+                    <li> Clean water and sanitation</li>
+                    <li> Affordable and clean energy</li>
+                    <li> Industry innovation and infrastructure</li>
+                    <li> Life Below Water</li>
+                    <li> Life on Land</li>
+                    <li> Rural well being</li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
